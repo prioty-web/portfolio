@@ -1,8 +1,31 @@
-# React + Vite
+# Prioty Decoded
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Prioty Decoded** is my personal portfolio, built to showcase my skills and projects while offering an easy way to connect with me. Explore, connect, and get to know me better!
 
-Currently, two official plugins are available:
+## 🌐 Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [**prioty-decoded.surge.sh**](https://prioty-decoded.surge.sh)
+
+---
+
+## ✨ Features
+
+- 📱 **Responsive Design**: Looks great on all devices.
+- 📇 **Contact Options**: Social links and email for quick communication.
+- 📄 **Resume Download**: Download my resume with a single click.
+- 🎨 **Interactive Elements**: Engaging animations for a dynamic experience.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS
+- **Deployment**: Surge
+
+---
+
+## 🚀 Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/prioty-decoded.git
