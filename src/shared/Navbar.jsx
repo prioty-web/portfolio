@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
         
     const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId); // Use the passed sectionId
+        const section = document.getElementById(sectionId); 
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
@@ -15,24 +15,24 @@ const Navbar = () => {
         <>
             <li>
                 <Link
-                    onClick={() => scrollToSection("banner")} // Corrected to use dynamic sectionId
-                    className="border-b-4 border-red-900 text-red-900"
+                    onClick={() => scrollToSection("banner")}
+                    className="md:border-b-4 font-bold border-red-900 text-red-900  md:text-gray-300"
                 >
                     Home
                 </Link>
             </li>
             <li className="ml-5">
                 <Link
-                    onClick={() => scrollToSection("skills")} // Corrected to use dynamic sectionId
-                    className="border-b-4 border-red-900 text-red-900"
+                    onClick={() => scrollToSection("skills")}
+                    className="md:border-b-4 font-bold border-red-900 text-red-900  md:text-gray-300"
                 >
                     Skills
                 </Link>
             </li>
             <li className="ml-5">
                 <Link
-                    onClick={() => scrollToSection("projects")} // Corrected to use dynamic sectionId
-                    className="border-b-4 border-red-900 text-red-900"
+                    onClick={() => scrollToSection("projects")}
+                    className="md:border-b-4 font-bold border-red-900  text-red-900  md:text-gray-300"
                 >
                     Projects
                 </Link>
@@ -40,7 +40,7 @@ const Navbar = () => {
             <li className="ml-5">
                 <Link
                     onClick={() => scrollToSection("contact")} // Corrected to use dynamic sectionId
-                    className="border-b-4 border-red-900 text-red-900"
+                    className="md:border-b-4 font-bold border-red-900  text-red-900  md:text-gray-300"
                 >
                     Contact
                 </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </button>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content text-gray-100 mt-3 w-52 p-2 shadow border-b-4 border-red-800"
+                        className="menu menu-sm dropdown-content text-gray-100 mt-3 w-52 p-2 shadow bg-slate-50 bg-opacity-20"
                     >
                         {nav}
                     </ul>
@@ -87,7 +87,7 @@ const Navbar = () => {
                 />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-gray-200">
+                <ul className="menu menu-horizontal px-1 text-gray-200 ">
                     {nav}
                 </ul>
             </div>

@@ -8,6 +8,7 @@ const projects = [
     title: "Query Hunt",
     description: "A dynamic platform for product queries and exploration.",
     demo: "https://query-hunt.web.app/all-products",
+    github: "https://github.com/programming-hero-web-course2/b10a11-client-side-prioty-web",
     img: "/projects/qh.png",
     stack: ["React", "Firebase", 'MongoDB', 'vercel'],
   },
@@ -15,6 +16,7 @@ const projects = [
     title: "Career Council",
     description: "A career counseling platform for job seekers and mentors.",
     demo: "https://career-council-f8d6b.web.app/",
+    github: "https://github.com/programming-hero-web-course1/b10-a9-authentication-prioty-web",
     img: "/projects/ch.png",
     stack: ["React", "Tailwind CSS", "Firebase"],
   },
@@ -22,6 +24,7 @@ const projects = [
     title: "Sports Equipment",
     description: "A modern sports gear store with a seamless user experience.",
     demo: "https://sports-equipment-d2de9.web.app/",
+    github: "https://github.com/programming-hero-web-course2/b10-a10-client-side-prioty-web",
     img: "/projects/se.png",
     stack: ["React", "Tailwind", "MongoDB"],
   },
@@ -60,9 +63,17 @@ const ProjectCard = ({ project }) => {
           href={project.demo}
           target="_blank"
           rel="noopener noreferrer"
+          className="mt-4 mr-4 inline-flex items-center gap-2 text-red-400 hover:text-red-600 font-semibold text-sm transition-colors"
+        >
+          Visit Live Link  <FaExternalLinkAlt />
+        </a>
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 inline-flex items-center gap-2 text-red-400 hover:text-red-600 font-semibold text-sm transition-colors"
         >
-          Visit Demo <FaExternalLinkAlt />
+          Git Repository <FaExternalLinkAlt />
         </a>
       </div>
     </motion.div>
