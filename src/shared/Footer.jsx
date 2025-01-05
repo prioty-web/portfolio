@@ -41,6 +41,7 @@ const Footer = () => {
        <FaGithub></FaGithub>
       </a>
     </div>
+    
   </nav>
 </footer>
         

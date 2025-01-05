@@ -6,12 +6,18 @@ import AboutMe from './AboutMe';
 
 const Home = () => {
     return (
-       <>
-        <Banner></Banner>
-        <MySkills></MySkills>
-        <Projects></Projects>
-        <AboutMe></AboutMe>
-       </>
+        <>
+            <div id='banner'>
+                <Banner></Banner>
+            </div>
+            <div id='skills'>
+                <MySkills></MySkills>
+            </div>
+            <div id="projects">
+                <Projects />
+            </div>
+            <AboutMe></AboutMe>
+        </>
     );
 };
 

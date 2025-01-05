@@ -1,43 +1,55 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+        
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId); // Use the passed sectionId
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     const nav = (
         <>
             <li>
-                <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                        isActive ? "border-b-4 border-red-900 text-red-900" : ""
-                    }
+                <Link
+                    onClick={() => scrollToSection("banner")} // Corrected to use dynamic sectionId
+                    className="border-b-4 border-red-900 text-red-900"
                 >
                     Home
-                </NavLink>
+                </Link>
             </li>
-            <li>
-                <NavLink
-                    to="/project"
-                    className={({ isActive }) =>
-                        isActive ? "border-b-4 border-red-900 text-red-900" : ""
-                    }
+            <li className="ml-5">
+                <Link
+                    onClick={() => scrollToSection("skills")} // Corrected to use dynamic sectionId
+                    className="border-b-4 border-red-900 text-red-900"
+                >
+                    Skills
+                </Link>
+            </li>
+            <li className="ml-5">
+                <Link
+                    onClick={() => scrollToSection("projects")} // Corrected to use dynamic sectionId
+                    className="border-b-4 border-red-900 text-red-900"
                 >
                     Projects
-                </NavLink>
+                </Link>
             </li>
-            <li>
-                <NavLink
-                    to="/contact"
-                    className={({ isActive }) =>
-                        isActive ? "border-b-4 border-red-900 text-red-900" : ""
-                    }
+            <li className="ml-5">
+                <Link
+                    onClick={() => scrollToSection("contact")} // Corrected to use dynamic sectionId
+                    className="border-b-4 border-red-900 text-red-900"
                 >
                     Contact
-                </NavLink>
+                </Link>
             </li>
         </>
     );
+    
 
+ 
     return (
         <div className="navbar fixed z-10 bg-opacity-30 bg-gray-500 text-white  mx-auto ">
             <div className="navbar-start">
@@ -69,7 +81,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <img
-                    className="md:w-[7vw]  md:h-[5vw] md:pl-5 my-auto"
+                    className="max-md:w-20 md:w-[7vw]  md:h-[5vw] md:pl-5 my-auto"
                     src="/PortfolioLogo.png"
                     alt="Portfolio Logo"
                 />
