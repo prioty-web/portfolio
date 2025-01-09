@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="flex justify-center gap-8 flex-wrap">
         {/* LinkedIn Icon */}
         <a
-          href="https://www.linkedin.com/in/anjum-prioty-1b3636317/"
+          href="https://www.linkedin.com/in/anjum-hamim-prioty/"
           className="text-4xl transition-all duration-300 transform hover:scale-110 hover:text-blue-600"
         >
           <FaLinkedin />

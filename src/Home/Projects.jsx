@@ -5,10 +5,18 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    title: "Sports Equipment",
+    description: "A modern sports gear store with a seamless user experience.",
+    demo: "https://sports-equipment-d2de9.web.app/",
+    github: "https://github.com/prioty-web/sports-equipment-client.git",
+    img: "/projects/se.png",
+    stack: ["React", "Tailwind", "MongoDB"],
+  },
+  {
     title: "Query Hunt",
     description: "A dynamic platform for product queries and exploration.",
     demo: "https://query-hunt.web.app/all-products",
-    github: "https://github.com/programming-hero-web-course2/b10a11-client-side-prioty-web",
+    github: "https://github.com/prioty-web/query-hunt-client.git",
     img: "/projects/qh.png",
     stack: ["React", "Firebase", 'MongoDB', 'vercel'],
   },
@@ -16,18 +24,11 @@ const projects = [
     title: "Career Council",
     description: "A career counseling platform for job seekers and mentors.",
     demo: "https://career-council-f8d6b.web.app/",
-    github: "https://github.com/programming-hero-web-course1/b10-a9-authentication-prioty-web",
+    github: "https://github.com/prioty-web/career-counsel.git",
     img: "/projects/ch.png",
     stack: ["React", "Tailwind CSS", "Firebase"],
-  },
-  {
-    title: "Sports Equipment",
-    description: "A modern sports gear store with a seamless user experience.",
-    demo: "https://sports-equipment-d2de9.web.app/",
-    github: "https://github.com/programming-hero-web-course2/b10-a10-client-side-prioty-web",
-    img: "/projects/se.png",
-    stack: ["React", "Tailwind", "MongoDB"],
-  },
+  }
+ 
 ];
 
 const ProjectCard = ({ project }) => {

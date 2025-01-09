@@ -46,7 +46,7 @@ const Footer = () => {
           <a href="mailto:priotyy12@gmail.com">
             <img className="w-8 md:w-10" src="/icon/gmail.png" alt="Gmail" />
           </a>
-          <a className="text-2xl md:text-3xl" href="https://www.linkedin.com/in/anjum-prioty-1b3636317/">
+          <a className="text-2xl md:text-3xl" href="https://www.linkedin.com/in/anjum-hamim-prioty/">
             <FaLinkedin />
           </a>
           <a href="https://www.facebook.com/anjumhamim.prioty/">
